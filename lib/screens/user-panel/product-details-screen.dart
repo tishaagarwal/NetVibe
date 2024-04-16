@@ -116,10 +116,10 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                             widget.productModel.isSale == true &&
                                     widget.productModel.salePrice != ''
                                 ? Text(
-                                    "PKR: " + widget.productModel.salePrice,
+                                    "Rs: " + widget.productModel.salePrice,
                                   )
                                 : Text(
-                                    "PKR: " + widget.productModel.fullPrice,
+                                    "Rs: " + widget.productModel.fullPrice,
                                   ),
                           ],
                         ),
@@ -211,9 +211,9 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   static Future<void> sendMessageOnWhatsApp({
     required ProductModel productModel,
   }) async {
-    final number = "+923075812354";
+    final number = "+919920621216";
     final message =
-        "Hello Techi4u \n i want to know about this product \n ${productModel.productName} \n ${productModel.productId}";
+        "Hello \n i want to know about this product \n ${productModel.productName} \n ${productModel.productId}";
 
     final url = 'https://wa.me/$number?text=${Uri.encodeComponent(message)}';
 

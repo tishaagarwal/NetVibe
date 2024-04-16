@@ -139,7 +139,7 @@ class _CartScreenState extends State<CartScreen> {
                               child: CircleAvatar(
                                 radius: 14.0,
                                 backgroundColor: AppConst.appMainColor,
-                                child: Text('-'),
+                                child: Text('-',style: TextStyle(color: AppConst.appTextColor1),),
                               ),
                             ),
                             SizedBox(
@@ -166,7 +166,7 @@ class _CartScreenState extends State<CartScreen> {
                               child: CircleAvatar(
                                 radius: 14.0,
                                 backgroundColor: AppConst.appMainColor,
-                                child: Text('+'),
+                                child: Text('+',style: TextStyle(color: AppConst.appTextColor1)),
                               ),
                             )
                           ],
@@ -189,7 +189,7 @@ class _CartScreenState extends State<CartScreen> {
           children: [
             Obx(
               () => Text(
-                " Total ${productPriceController.totalPrice.value.toStringAsFixed(1)} : PKR",
+                " Total ${productPriceController.totalPrice.value.toStringAsFixed(1)} : Rs",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),

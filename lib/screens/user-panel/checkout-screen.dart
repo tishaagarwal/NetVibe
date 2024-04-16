@@ -142,7 +142,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
           children: [
             Obx(
               () => Text(
-                " Total ${productPriceController.totalPrice.value.toStringAsFixed(1)} : PKR",
+                " Total ${productPriceController.totalPrice.value.toStringAsFixed(1)} : Rs",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
